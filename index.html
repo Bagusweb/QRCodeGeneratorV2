@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/asset/qrcode.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/spinner.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navAligner">
+            <nav>
+                <a aria-checked="true" aria-labelledby="home" role="tab" href="/" class="">Home</a>
+                <a aria-checked="false" aria-labelledby="history" role="tab" href="#history" class="">History</a>
+                <a aria-checked="false" aria-labelledby="about" role="tab" href="#about" class="">About</a>
+            </nav>
+        </div>
+        <main>
+            <div class="column1">
+                <h1 class="fancy-text mb-3">QR-Code Generator</h1>
+                <p class="mb-5">Turn any text, including URLs, messages, and more, into a scannable QR Code instantly ⚡.</p>
+                <label class="" for="txtArea">Enter Text</label>
+                <textarea class="mt-2 mb-4" rows="7" name="textToConvert" autocomplete="off" id="txtArea"></textarea>
+                <button id="generateBtn" class="generate-btn">GENERATE</button>
+            </div>
+            <div class="column2">
+                <div id="imgShell">
+                    <div id="img-placeholder" aria-hidden="false" class="img-placeholder"></div>
+                </div>
+                <label class="mt-5" for="imgSize">Image Size</label>
+                <select class="mt-2" onchange="changeSize(this)" name="imgSize" id="imgSize">
+                    <option value="1">150x150</option>
+                    <option value="2">200x200</option>
+                    <option value="3" selected>250x250</option>
+                </select>
+                <div class="dlrow">
+                    <input type="text" autocomplete="off" name="imgName" id="imgName" placeholder="saved_image_name">
+                    <button id="dlBtn">
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m720-120 160-160-56-56-64 64v-167h-80v167l-64-64-56 56 160 160ZM560 0v-80h320V0H560ZM240-160q-33 0-56.5-23.5T160-240v-560q0-33 23.5-56.5T240-880h280l240 240v121h-80v-81H480v-200H240v560h240v80H240Zm0-80v-560 560Z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>

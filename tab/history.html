@@ -1,0 +1,36 @@
+<div class="column3">
+  <h1 class="fancy-text mb-2">QR-Code Generator</h1>
+  <p class="mb-3">You're generated history below :</p>
+  <div class="table-container" aria-hidden="true">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th class="table-header-cell">Text</th>
+            <th class="table-header-cell">Created At</th>
+            <th class="table-header-cell">Action</th>
+          </tr>
+        </thead>
+    
+        <tbody>
+        </tbody>
+      </table>
+  </div>
+  <div id="spinner" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+</div>
+<div class="column2">
+  <div id="imgShell">
+      <div id="img-placeholder" aria-hidden="false" class="img-placeholder"></div>
+  </div>
+  <label class="mt-5" for="imgSize">Image Size</label>
+  <select class="mt-2" name="imgSize" onchange="changeSize(this)" id="imgSize">
+      <option value="1">150x150</option>
+      <option value="2">200x200</option>
+      <option value="3" selected>250x250</option>
+  </select>
+  <div class="dlrow">
+      <input type="text" autocomplete="off" name="imgName" id="imgName" placeholder="saved_image_name">
+      <button id="dlBtn">
+          <svg id="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m720-120 160-160-56-56-64 64v-167h-80v167l-64-64-56 56 160 160ZM560 0v-80h320V0H560ZM240-160q-33 0-56.5-23.5T160-240v-560q0-33 23.5-56.5T240-880h280l240 240v121h-80v-81H480v-200H240v560h240v80H240Zm0-80v-560 560Z"/></svg>
+      </button>
+  </div>
+</div>
