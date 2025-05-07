@@ -3,4 +3,4 @@ QRCode Generator is a personal project I develop to help people turn any text su
 
 ## Installation
 Git clone this project and put it to the webroot or run live server through vscode (preview).
-Or direct access this project [here](https://QRCodeGeneratorV2.vercel.app/)
+Or direct access this project [here](https://qr-code-generator-v2-smoky.vercel.app/)
